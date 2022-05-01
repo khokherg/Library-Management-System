@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/LMS.Master" AutoEventWireup="true" CodeBehind="LibrarianHomePageMaster.master.cs" Inherits="LibraryManagementSystem.LibrarianHomePageMaster" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolderLibrarian" runat="server">
+    </asp:ContentPlaceHolder> 
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="HeaderContentPlaceHolder" runat="server">
+    <asp:LinkButton CssClass="returnToHomePage" ID="ReturnToHomeLibrarianLinkButton" runat="server" OnClick="ReturnToHomePage_Click" ClientIDMode ="Static"  CausesValidation="false">Return To Home Page</asp:LinkButton>
+    <%--<asp:HyperLink CssClass="returnToHomePage" ID="ReturnToHomeAdmin" runat="server" NavigateUrl="~/LibrarianHomePage.aspx">Return To Home Page</asp:HyperLink>--%>
+    
+    <asp:LinkButton cssClass ="LinkBtnLogOut" OnClick="BtnLogOut_Click" runat="server" ClientIDMode="Static" >Log out</asp:LinkButton>
+
+    <asp:ContentPlaceHolder ID="HeaderContentPlaceHolderLibraraian" runat="server">
+    </asp:ContentPlaceHolder>
+
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder ID="MainContentPlaceHolderLibraraian" runat="server">
+    </asp:ContentPlaceHolder>
+
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="FooterContentPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder ID="FooterContentPlaceHolderLibrarian" runat="server">
+    </asp:ContentPlaceHolder>
+
+</asp:Content>

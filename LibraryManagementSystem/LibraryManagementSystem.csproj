@@ -1,0 +1,475 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B326044-D675-4490-9BBD-CA051C801B45}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibraryManagementSystem</RootNamespace>
+    <AssemblyName>LibraryManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AcceptReturnRequestPage.aspx" />
+    <Content Include="AccountDeletionRequests.aspx" />
+    <Content Include="AdminHomePage.aspx" />
+    <Content Include="AdminHomePageTEST.aspx" />
+    <Content Include="App_Data\LMS.mdf" />
+    <Content Include="App_Data\LMS_log.ldf">
+      <DependentUpon>LMS.mdf</DependentUpon>
+    </Content>
+    <Content Include="Author.aspx" />
+    <Content Include="AuthorReportPage.aspx" />
+    <Content Include="Book.aspx" />
+    <Content Include="BookReportPage.aspx" />
+    <Content Include="CalculateFinePage.aspx" />
+    <Content Include="Category.aspx" />
+    <Content Include="CategoryReportPage.aspx" />
+    <Content Include="CSS\LMS.css" />
+    <Content Include="EditProfile.aspx" />
+    <Content Include="ExtendReturnDatePage.aspx" />
+    <Content Include="Images\AdminHomePageBackground.jpeg" />
+    <Content Include="IssueBookPage.aspx" />
+    <Content Include="IssueBookReportPage.aspx" />
+    <Content Include="IssuedBooks.aspx" />
+    <Content Include="IssuedBooksHistory.aspx" />
+    <Content Include="LibrarianHomePage.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Images\loginPageBackground.jpg" />
+    <Content Include="MemberHomePage.aspx" />
+    <Content Include="OverdueBookReportPage.aspx" />
+    <Content Include="PaidOverduesHistory.aspx" />
+    <Content Include="Publisher.aspx" />
+    <Content Include="PublisherReportPage.aspx" />
+    <Content Include="RequestAcceptPage.aspx" />
+    <Content Include="RequestToDeleteAccount.aspx" />
+    <Content Include="RequestToIssue.aspx" />
+    <Content Include="RequestToReturnBook.aspx" />
+    <Content Include="ReturnBookPage.aspx" />
+    <Content Include="ReturnedBooks.aspx" />
+    <Content Include="SearchBookMember.aspx" />
+    <Content Include="SearchBook.aspx" />
+    <Content Include="SearchBookPage.aspx" />
+    <Content Include="Users.aspx" />
+    <Content Include="UserSignUp.aspx" />
+    <Content Include="ViewUnpaidOverdues.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcceptReturnRequestPage.aspx.cs">
+      <DependentUpon>AcceptReturnRequestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcceptReturnRequestPage.aspx.designer.cs">
+      <DependentUpon>AcceptReturnRequestPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccountDeletionRequests.aspx.cs">
+      <DependentUpon>AccountDeletionRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountDeletionRequests.aspx.designer.cs">
+      <DependentUpon>AccountDeletionRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHomePage.aspx.cs">
+      <DependentUpon>AdminHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHomePage.aspx.designer.cs">
+      <DependentUpon>AdminHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHomePageMaster.master.cs">
+      <DependentUpon>AdminHomePageMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHomePageMaster.master.designer.cs">
+      <DependentUpon>AdminHomePageMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHomePageTEST.aspx.cs">
+      <DependentUpon>AdminHomePageTEST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHomePageTEST.aspx.designer.cs">
+      <DependentUpon>AdminHomePageTEST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Author.aspx.cs">
+      <DependentUpon>Author.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Author.aspx.designer.cs">
+      <DependentUpon>Author.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorReportPage.aspx.cs">
+      <DependentUpon>AuthorReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthorReportPage.aspx.designer.cs">
+      <DependentUpon>AuthorReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Book.aspx.cs">
+      <DependentUpon>Book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Book.aspx.designer.cs">
+      <DependentUpon>Book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookReportPage.aspx.cs">
+      <DependentUpon>BookReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookReportPage.aspx.designer.cs">
+      <DependentUpon>BookReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalculateFinePage.aspx.cs">
+      <DependentUpon>CalculateFinePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalculateFinePage.aspx.designer.cs">
+      <DependentUpon>CalculateFinePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryReportPage.aspx.cs">
+      <DependentUpon>CategoryReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryReportPage.aspx.designer.cs">
+      <DependentUpon>CategoryReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendReturnDatePage.aspx.cs">
+      <DependentUpon>ExtendReturnDatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtendReturnDatePage.aspx.designer.cs">
+      <DependentUpon>ExtendReturnDatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IssueBookPage.aspx.cs">
+      <DependentUpon>IssueBookPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssueBookPage.aspx.designer.cs">
+      <DependentUpon>IssueBookPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IssueBookReportPage.aspx.cs">
+      <DependentUpon>IssueBookReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssueBookReportPage.aspx.designer.cs">
+      <DependentUpon>IssueBookReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IssuedBooks.aspx.cs">
+      <DependentUpon>IssuedBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssuedBooks.aspx.designer.cs">
+      <DependentUpon>IssuedBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IssuedBooksHistory.aspx.cs">
+      <DependentUpon>IssuedBooksHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssuedBooksHistory.aspx.designer.cs">
+      <DependentUpon>IssuedBooksHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianHomePage.aspx.cs">
+      <DependentUpon>LibrarianHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibrarianHomePage.aspx.designer.cs">
+      <DependentUpon>LibrarianHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianHomePageMaster.master.cs">
+      <DependentUpon>LibrarianHomePageMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibrarianHomePageMaster.master.designer.cs">
+      <DependentUpon>LibrarianHomePageMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="LMS.Master.cs">
+      <DependentUpon>LMS.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LMS.Master.designer.cs">
+      <DependentUpon>LMS.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LMSDataSet.cs">
+      <DependentUpon>LMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberHomePage.aspx.cs">
+      <DependentUpon>MemberHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberHomePage.aspx.designer.cs">
+      <DependentUpon>MemberHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberHomePageMaster.master.cs">
+      <DependentUpon>MemberHomePageMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberHomePageMaster.master.designer.cs">
+      <DependentUpon>MemberHomePageMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="OverdueBookReportPage.aspx.cs">
+      <DependentUpon>OverdueBookReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OverdueBookReportPage.aspx.designer.cs">
+      <DependentUpon>OverdueBookReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaidOverduesHistory.aspx.cs">
+      <DependentUpon>PaidOverduesHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaidOverduesHistory.aspx.designer.cs">
+      <DependentUpon>PaidOverduesHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publisher.aspx.cs">
+      <DependentUpon>Publisher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publisher.aspx.designer.cs">
+      <DependentUpon>Publisher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublisherReportPage.aspx.cs">
+      <DependentUpon>PublisherReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublisherReportPage.aspx.designer.cs">
+      <DependentUpon>PublisherReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestAcceptPage.aspx.cs">
+      <DependentUpon>RequestAcceptPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestAcceptPage.aspx.designer.cs">
+      <DependentUpon>RequestAcceptPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestToDeleteAccount.aspx.cs">
+      <DependentUpon>RequestToDeleteAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestToDeleteAccount.aspx.designer.cs">
+      <DependentUpon>RequestToDeleteAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestToIssue.aspx.cs">
+      <DependentUpon>RequestToIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestToIssue.aspx.designer.cs">
+      <DependentUpon>RequestToIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestToReturnBook.aspx.cs">
+      <DependentUpon>RequestToReturnBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestToReturnBook.aspx.designer.cs">
+      <DependentUpon>RequestToReturnBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnBookPage.aspx.cs">
+      <DependentUpon>ReturnBookPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReturnBookPage.aspx.designer.cs">
+      <DependentUpon>ReturnBookPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnedBooks.aspx.cs">
+      <DependentUpon>ReturnedBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReturnedBooks.aspx.designer.cs">
+      <DependentUpon>ReturnedBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBookMember.aspx.cs">
+      <DependentUpon>SearchBookMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchBookMember.aspx.designer.cs">
+      <DependentUpon>SearchBookMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBook.aspx.cs">
+      <DependentUpon>SearchBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchBook.aspx.designer.cs">
+      <DependentUpon>SearchBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBookPage.aspx.cs">
+      <DependentUpon>SearchBookPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchBookPage.aspx.designer.cs">
+      <DependentUpon>SearchBookPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserSignUp.aspx.cs">
+      <DependentUpon>UserSignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSignUp.aspx.designer.cs">
+      <DependentUpon>UserSignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUnpaidOverdues.aspx.cs">
+      <DependentUpon>ViewUnpaidOverdues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewUnpaidOverdues.aspx.designer.cs">
+      <DependentUpon>ViewUnpaidOverdues.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LMSDataSet.xsc">
+      <DependentUpon>LMSDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="LMS.Master" />
+    <Content Include="AdminHomePageMaster.master" />
+    <Content Include="LibrarianHomePageMaster.master" />
+    <None Include="LMSDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMSDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="LMSDataSet.xss">
+      <DependentUpon>LMSDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="MemberHomePageMaster.master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64288</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64288/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

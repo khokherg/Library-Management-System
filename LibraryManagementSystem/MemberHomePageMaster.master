@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/LMS.Master" AutoEventWireup="true" CodeBehind="MemberHomePageMaster.master.cs" Inherits="LibraryManagementSystem.MemberHomePageMaster" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolderMember" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="HeaderContentPlaceHolder" runat="server">
+     <asp:HyperLink CssClass="returnToHomePage" ID="ReturnToHomeAdmin" runat="server" NavigateUrl="~/MemberHomePage.aspx">Return To Home Page</asp:HyperLink>
+    <asp:LinkButton cssClass ="LinkBtnLogOut" OnClick="BtnLogOut_Click" runat="server" ClientIDMode="Static" >Log out</asp:LinkButton>
+    <asp:ContentPlaceHolder ID="HeaderContentPlaceHolderMember" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder ID="MainContentPlaceHolderMember" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="FooterContentPlaceHolder" runat="server">
+    <asp:ContentPlaceHolder ID="FooterContentPlaceHolderMember" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

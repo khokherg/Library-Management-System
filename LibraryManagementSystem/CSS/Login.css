@@ -1,0 +1,54 @@
+﻿body {
+    background-image:url(Images/loginPageBackground.jpg);
+    height:auto;
+    overflow: hidden;
+    background-size: cover;
+    
+}
+#LoginInfoFrame
+{
+background-color:white;
+display:block; 
+margin-left:auto;
+margin-right:auto;
+height:350px;
+width:350px;
+padding-left:20px;
+border-radius:10px;
+
+}
+
+
+
+        header{
+            background-color:Highlight;
+        }
+        main{
+            /*background-color:peachpuff;*/
+        }
+        footer{
+            background-color:Highlight;
+             color: rebeccapurple;
+            font-size: 20px;
+            text-align:center;
+        }
+        .btn{
+           background-color: darkcyan;
+           width:200px;
+           height:50px;
+           text-decoration:none;
+           color:white;
+
+ 
+        }
+        .lbl {
+            color: rebeccapurple;
+            font-size: 20px;
+            text-size-adjust:150%;
+        }
+        .lblH {
+             text-align: center;
+            color: rebeccapurple;
+            font-size: 40px;
+           
+        }

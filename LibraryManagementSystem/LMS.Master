@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LMS.master.cs" 
+    Inherits="LibraryManagementSystem.LMS" %>
+
+<!DOCTYPE html>
+<html>
+
+<head runat="server">
+    <title></title>
+
+ <link rel="stylesheet" runat="server" href="~/CSS/LMS.css" type="text/css" media="screen" />
+
+      
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="divLMS">
+            <header style="background-color: #800000">
+                <div  id="LblLMSTitle">Library Management System</div><br />
+                    
+                    
+                <br>
+    
+    <asp:ContentPlaceHolder ID="HeaderContentPlaceHolder" runat="server">
+        
+                </asp:ContentPlaceHolder>
+
+                <br />
+                <br />
+
+                </header>
+          
+            <main>
+               
+                <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+             </main>
+            <footer>
+               <%-- <p>
+                        <asp:HyperLink ID="linkLogin" runat="server" postbackurl="Login.aspx" >Login Page</asp:HyperLink>
+                    </p>
+                    <p>
+                        Sheridan, 2018</p>--%>
+                <asp:ContentPlaceHolder ID="FooterContentPlaceHolder" runat="server"  >
+                    
+                </asp:ContentPlaceHolder>
+                </footer>
+        </div>
+    </form>
+</body>
+</html>

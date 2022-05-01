@@ -1,0 +1,369 @@
+﻿
+header {
+    background-color: Highlight;
+}
+
+main {
+    /*background-color:peachpuff;*/
+}
+
+footer {
+    /*background-color: Highlight;*/
+    color: rebeccapurple;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn {
+    background-color: darkcyan;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.lbl {
+    color: black;
+    font-size: 20px;
+    text-size-adjust: 150%;
+    font-weight:bold;
+    font-family:'Cambria Math';
+    text-align:center;
+
+}
+
+.lblH {
+    text-align: center;
+    color: rebeccapurple;
+    font-size: 40px;
+}
+/*#divLMS{
+    text-align:center;
+}*/
+
+#LoginBody {
+    background-image: url(../Images/loginPageBackground.jpg);
+    height: 450px;
+    width:100%;
+    overflow: hidden;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+#SignupBody {
+    background-image: url(../Images/loginPageBackground.jpg);
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#LoginInfoFrame {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 270px;
+    width: 404px;
+    padding-left: 25px;
+    padding-top:30px;
+    border-radius: 10px;
+}
+.rdButtonsLogin
+{
+    padding-left: 90px;
+
+}
+
+#txtPassword
+{
+    margin-left:15px;
+}
+#txtUserIDSignUp {
+
+    margin-left: 45px;
+}
+#SignupInfoFrame {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 270px;
+    width: 404px;
+    padding-left: 25px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+.LinkBtnLogOut {
+    float: right;
+    /* background-color: White;*/
+    font-weight: 200;
+    Font-Size: 15px;
+    Color: white;
+}
+
+.returnToHomePage {
+    float: left;
+    font-weight: 200;
+    Font-Size: 15px;
+    Color: white;
+}
+
+#LblLMSTitle {
+    height:10px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-variant: small-caps;
+    display: block;
+    text-align:center;
+   
+}
+
+#btnLogIn {
+    background-color: #800000;
+    color: white;
+    margin-left: 130px;
+}
+#btnSignUp {
+    background-color: #800000;
+    color: white;
+    margin-left: 130px;
+}
+
+/*Admin Home Page*/
+.MainDiv {
+    background-image: url(../Images/AdminHomePageBackground.jpeg);
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+#AdminHomePageFrame {
+    background-color:beige;
+    /*/display: block;*/
+    opacity:0.9;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 15px;
+    border-radius: 10px;
+
+}
+.btnAdminHomePage {
+    /*color: white;*/
+    background-color: beige;
+    border:none;
+    font-size:15px;
+    font-weight:600;
+    
+}
+.btnAdminHomePage:hover{
+    font-style:italic;
+    background-color:silver;
+
+}
+
+.LibrarianPageButtons {
+    animation-name: btnLibrarianPageAnimation;
+    animation-duration: 1s;
+    margin-left: 160px;
+    background-color: antiquewhite;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@keyframes btnLibrarianPageAnimation {
+    from {
+        
+        margin-left:0px;
+    }
+
+    to {
+        
+        margin-left:160px;
+    }
+}
+
+.MemberPageButtons {
+    animation-name: btnMemberPageAnimation;
+    animation-duration: 1s;
+    margin-left: 200px;
+    background-color: antiquewhite;
+    width: 300px;
+    height: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@keyframes btnMemberPageAnimation {
+    from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left: 200px;
+    }
+}
+
+
+.DataGrid{
+    background-color:beige;
+    font-weight:bold;
+    font-size:15px;
+    overflow:scroll;
+}
+
+.GridHyperlink
+{
+    color:white;
+}
+
+#ExtendReturnDateFrame {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 404px;
+    padding-left: 25px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+.btnLibrarian {
+    background-color: #800000;
+    color: white;
+    margin-left: 130px;
+    height:40px;
+    width:120px;
+    margin-top:10px;
+}
+
+#IssueBookFrame {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 404px;
+    padding-left: 25px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+#ReturnBookFrame {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 404px;
+    padding-left: 25px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+.btnBookSearch {
+    background-color: #800000;
+    color: white;
+    margin-left: 130px;
+    height: 40px;
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 180px;
+}
+
+.GridFrameSearchBook {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 404px;
+    padding-left: 25px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+#FinePageFrame {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 404px;
+    padding-left: 25px;
+    padding-top: 30px;
+    border-radius: 10px
+}
+
+#lblViewIssuedBooks {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-left:350px;
+    margin-bottom:40px;
+    font-weight: bold;
+    font-family: 'Cambria Math';
+    
+}
+.lblMember {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-left: 400px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-family: 'Cambria Math';
+}
+
+.btnMemberAccountDel {
+    background-color: #800000;
+    color: white;
+    margin-left: 100px;
+    height: 40px;
+    width: 120px;
+    margin-top: 50px;
+}
+
+#AccountDeleteFrame {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 404px;
+    padding-left: 25px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+#RequestToIssueFrame {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 404px;
+    padding-left: 25px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
